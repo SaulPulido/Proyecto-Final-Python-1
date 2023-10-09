@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ encabezado_pagina }}</title>
+</head>
+<body>
+    <h1> {{ titulo_pagina }} </h1>
+    <ul>
+        {% for id,pedido,cliente,producto,precio in pedidos %}
+            <h3><li> Pedido número: {{ pedido }} _ Cliente: {{ cliente }} _ Producto: {{ producto }} _ Precio: ${{ precio }}pesos</li></h3>
+        {% endfor %}
+    </ul>
+</body>
+</html>
